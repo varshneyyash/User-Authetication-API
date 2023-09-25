@@ -27,8 +27,8 @@ This is a simple Node.js authentication API using Express, JWT (JSON Web Tokens)
 
 1. Clone the repository:
 
-   git clone https://github.com/yourusername/user-authentication-api.git
-   cd user-authentication-api/assignment
+- git clone [User-Authetication-API](https://github.com/varshneyyash/User-Authetication-API)
+- cd user-authentication-api/assignment
 
 2. Install the required libraries:
 
