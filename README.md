@@ -14,12 +14,12 @@ This is a simple Node.js authentication API using Express, JWT (JSON Web Tokens)
 
 - [Installation](#installation)
 - [Usage](#usage)
-  - [Register a User](#register-a-user)
-  - [Login](#login)
-  - [Forgot Password (For Testing Purposes)](#forgot-password-for-testing-purposes)
-  - [Update User Information (Protected)](#update-user-information-protected)
-  - [Delete User (Protected)](#delete-user-protected)
-  - [Get All Users (Protected)](#get-all-users-protected)
+  - [Register a User](###register-a-user)
+  - [Login](###login)
+  - [Forgot Password (For Testing Purposes)](###forgot-password-for-testing-purposes)
+  - [Update User Information (Protected)](###update-user-information-protected)
+  - [Delete User (Protected)](###delete-user-protected)
+  - [Get All Users (Protected)](###get-all-users-protected)
 - [Configuration](#configuration)
 - [Running the Server](#running-the-server)
 - [LICENSE](#license)
@@ -47,14 +47,14 @@ This is a simple Node.js authentication API using Express, JWT (JSON Web Tokens)
 
 ## Usage
 
-# Register a User
+### Register a User
 
      POST http://localhost:3000/register
 
 - Register a new user by sending a POST request to /register.
 - Include the username and password in the request body as JSON.
 
-# Login
+### Login
 
     POST http://localhost:3000/login
 
@@ -62,7 +62,7 @@ This is a simple Node.js authentication API using Express, JWT (JSON Web Tokens)
 - Include the username and password in the request body as JSON.
 - Successful authentication returns a JWT token in the response header.
 
-# Forgot Password (For Testing Purposes)
+### Forgot Password (For Testing Purposes)
 
     POST http://localhost:3000//forgot-password
 
@@ -70,21 +70,21 @@ This is a simple Node.js authentication API using Express, JWT (JSON Web Tokens)
 - Send a POST request to /forgot-password with the username of the user.
 - A password reset token will be generated and "emailed" to the user (console log).
 
-# Update User Information (Protected)
+### Update User Information (Protected)
 
     PATCH http://localhost:3000/users/:username
 
 - Update user information, including the password, by sending a PATCH request to /users/:username.
 - The route is protected with JWT authentication. Include the JWT token in the Authorization header.
 
-# Delete User (Protected)
+### Delete User (Protected)
 
     DELETE http://localhost:3000/users/:username
 
 - Delete a user by sending a DELETE request to /users/:username.
 - The route is protected with JWT authentication. Include the JWT token in the Authorization header.
 
-# Get All Users (Protected)
+### Get All Users (Protected)
 
     GET http://localhost:3000/users
 
