@@ -62,7 +62,7 @@ This is a simple Node.js authentication API using Express, JWT (JSON Web Tokens)
 - Include the username and password in the request body as JSON.
 - Successful authentication returns a JWT token in the response header.
 
-### Forgot Password (For Testing Purposes)
+### Forgot Password 
 
     POST http://localhost:3000//forgot-password
 
