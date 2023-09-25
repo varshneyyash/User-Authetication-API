@@ -55,13 +55,13 @@ app.post('/login', async (req, res) => {
   res.header('Authorization', `Bearer ${token}`).json({ token });
 });
 
-// Forgot Password API (for testing purposes)
+// Forgot Password API 
 app.post('/forgot-password', async (req, res) => {
   const { username } = req.body;
   const user = users.find(user => user.username === username);
   if (!user) return res.status(400).json({ message: 'User not found' });
 
-  // Generate a reset token (for testing purposes)
+  // Generate a reset token 
   const resetToken = jwt.sign({ username: user.username }, secretKey, { expiresIn: '1h' });
 
   // Simulate sending an email with the reset token (for testing purposes)
