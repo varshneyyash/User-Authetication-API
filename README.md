@@ -64,7 +64,7 @@ This is a simple Node.js authentication API using Express, JWT (JSON Web Tokens)
 
 ### Forgot Password 
 
-    POST http://localhost:3000//forgot-password
+    POST http://localhost:3000/forgot-password
 
 - Simulates the process of sending a password reset email.
 - Send a POST request to /forgot-password with the username of the user.
